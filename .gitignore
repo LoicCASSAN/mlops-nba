@@ -1,0 +1,22 @@
+venv/
+env/
+wenv/
+
+.DS_Store
+__pycache__/
+**/.ipynb_checkpoints/**
+.vscode/
+*.pyc
+
+.output/
+settings_local.py
+data/
+
+
+.pytest_cache
+htmlcov
+.coverage
+
+2023-2024 NBA Player Stats - Regular.csv
+
+Stockage/
