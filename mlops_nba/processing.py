@@ -78,7 +78,7 @@ def process_and_train(loaded_files, players_df):
             loaded_files[file_name] = True
 
     # Sauvegarder le DataFrame en tant que fichier Parquet
-    save_dataframe_as_parquet(players_df, 'C:\\Users\\loicc\\OneDrive - Efrei\\Bureau\\COURS\\M2\\S9\\Machine Learning in Production\\Data Pipeline\\mlops-nba\\stockage', 'players_append.parquet', len(loaded_files))
+    save_dataframe_as_parquet(players_df, 'C:\\Users\\loicc\\OneDrive - Efrei\\Bureau\\COURS\\M2\\S9\\Machine Learning in Production\\Data Pipeline\\mlops-nba\\stockage', 'players_after_append.parquet', len(loaded_files))
     
     # Entraîner et sauvegarder le modèle
     train_and_save_model(players_df)

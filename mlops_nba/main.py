@@ -20,7 +20,7 @@ if __name__ == "__main__":
     players_df = process_players_data(players_df)
 
     # Sauvegarder le DataFrame final
-    save_dataframe_as_parquet(players_df, 'C:\\Users\\loicc\\OneDrive - Efrei\\Bureau\\COURS\\M2\\S9\\Machine Learning in Production\\Data Pipeline\\mlops-nba\\stockage', 'players_final.parquet', 1)
+    save_dataframe_as_parquet(players_df, 'C:\\Users\\loicc\\OneDrive - Efrei\\Bureau\\COURS\\M2\\S9\\Machine Learning in Production\\Data Pipeline\\mlops-nba\\stockage', 'players_process.parquet', 1)
 
     # Traitement et entraînement supplémentaires
     process_and_train(loaded_files, players_df)
