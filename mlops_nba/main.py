@@ -13,7 +13,9 @@ if __name__ == "__main__":
     print(f"Running on file: {filename}")
     players_df = pd.read_csv(filename, sep=',', encoding='Windows-1252')
     players_df['filename'] = filename.name
+    save_dataframe_as_parquet(players_df, 'C:\\Users\\loicc\\OneDrive - Efrei\\Bureau\\COURS\\M2\\S9\\Machine Learning in Production\\Data Pipeline\\mlops-nba\\stockage', 'players_raw.parquet', 1)
 
+    
     # Traitement des données des joueurs
     players_df = process_players_data(players_df)
 
